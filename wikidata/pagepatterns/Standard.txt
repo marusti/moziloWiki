@@ -1,0 +1,6 @@
+von: [eintrag|verweisender Eintrag]
+[----]
+[ueber1|{PATTERN_PAGETITLE}]
+[kursiv|([eintrag|{PATTERN_PAGEUSER}], {PATTERN_PAGEDATE})]
+
+Inhalt...

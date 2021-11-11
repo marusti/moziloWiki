@@ -1,0 +1,150 @@
+/*
+
+		moziloWiki - printstyle/style.css
+		
+		The print layout for moziloWiki. Feel free to change it to your
+		personal purposes.
+		
+		Arvid Zimmermann 2006 <moziloWiki@azett.com>
+		
+*/
+
+* {
+	font-family:Sans-Serif;
+}
+body {
+	color:#000000;
+	background-color:#ffffff;
+	font-size:12px;
+}
+
+div.printheader {
+	border:1px solid #999999;
+	background-color:#EEEEEE;
+	font-size:12px;
+	padding:10px;
+	overflow:auto;
+	text-align:justify;
+}
+div.printcontent {
+	margin-top:10px;
+	font-size:12px;
+	padding:10px;
+	text-align:justify;
+}
+a {
+	font-family:inherit;
+	color: #006622;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+a.pending {
+	color:#DD6800;
+}
+a.url {
+}
+a.page {
+}
+a.file {
+}
+a.mail {
+}
+a.paragraph {
+}
+table {
+	border-collapse:collapse;
+	width:100%;
+}
+th {
+	padding:5px;
+	background-color:#dddddd;
+	border:1px solid #bbbbbb;
+	text-align:left;
+}
+td,p {
+	padding:5px 0px;
+	margin:0px;
+}
+p.code {
+	padding:5px;
+	margin:5px;
+	font-family:monospace;
+	background-color:#FDFDFD;
+	border:1px dotted #bbbbbb;
+}
+h1 {
+	font-size:20px;
+	margin-top:8px;
+	margin-bottom:5px;
+}
+h2 {
+	font-size:16px;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+h2.printheader {
+	margin-top:5px;
+}
+h3 {
+	font-size:12px;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+hr {
+	border:1px solid #bbbbbb;
+	margin-top:9px;
+	margin-bottom:9px;
+}
+
+ul, ol {
+	font-family:inherit;
+	margin-top:4px;
+	margin-bottom:4px;
+}
+
+em {
+	font-style:normal;
+	font-family:inherit;
+}
+em.deadlink {
+	color:#ff4444;
+	text-decoration:line-through;
+	font-weight:bold;
+}
+em.bold {
+	font-weight:bold;
+	color:#000000;
+}
+em.italic {
+	font-style:italic;
+}
+em.bolditalic {
+	font-weight:bold;
+	font-style:italic;
+}
+em.underlined {
+	text-decoration:underline;
+}
+
+
+img {
+	border:none;
+}
+img.leftcontentimage {
+	margin:8px;
+	border:1px solid;
+	max-width:200px;
+	float:left;
+	margin-left:0px;
+}
+img.rightcontentimage {
+	margin:8px;
+	border:1px solid;
+	max-width:200px;
+	float:right;
+	margin-right:0px;
+}

@@ -1,0 +1,369 @@
+# LANGUAGE
+
+# Button captions
+
+BUTTON_CANCEL = Cancelar
+BUTTON_NEWPAGE = Crear entrada
+BUTTON_SAVE = Guardar
+BUTTON_SEARCHFILES = Buscar archivo
+BUTTON_SEARCHPAGES = Entrada de la Búsqueda
+BUTTON_SEARCHUSERS = Usuarios Buscar
+BUTTON_UPLOAD = Cargar
+
+# Confirmation messages
+
+CONFIRM_CLEARTRASHFILES = Quitar todos los archivos borrados de forma permanente desde el servidor?
+
+CONFIRM_CLEARTRASHPAGES = Eliminar todos los mensajes eliminados definitivamente del servidor?
+CONFIRM_DELETEPATTERN = Eliminar?
+CONFIRM_DELETEUSER = Eliminar?
+CONFIRM_RESETUSER = Restablecer la contraseña?
+
+CONFIRM_RESTOREVERSION = Restaurar?
+
+# Info texts
+
+INFO_PATTERNS = <h3> Nota: </ h3> Plantillas de entrada puede incluir marcadores de posición que se sustituyen con el beneficio de las plantillas de la siguiente manera: <br /> PATTERN_PAGETITLE (): nombre del tema-<br escala />) (PATTERN_PAGEDATE: Fecha y hora de <br /> colocación PATTERN_PAGEUSER (): usuario que ha creado la entrada
+
+# Misc. phrases and words
+
+LANG_ADDFAV = Entrada Añadir a Favoritos
+LANG_ADMINPAGE = Admin-Entrada
+
+LANG_ALLFILES = Todos los archivos
+LANG_ALLOWANONYMOUSACCESS = No los usuarios registrados pueden ver el contenido wiki:
+LANG_ALLPAGES = Todas las entradas
+LANG_ALLUSERS = Todos los usuarios
+LANG_AT = Es
+
+LANG_BACKLINKS = Backlinks
+
+LANG_BACKTOTOP = Top
+LANG_BANNED = Cerrado
+LANG_BY = De
+
+LANG_CHANGEPW = Cambiar Contraseña
+LANG_CHARACTERS = Character
+LANG_CHOOSEUSER = Seleccionar otros usuarios
+LANG_CHOOSEVERSION = Versiones Seleccione Otros
+LANG_COMMENT = Comentario:
+
+LANG_COMMENTCHANGEDBY = Ultima modificación la constituye:
+LANG_CURRENTLYONLINE = Online
+
+LANG_DAYS = Diario
+LANG_DEFAULTLANGUAGE = Default Language:
+
+LANG_DEFAULTPATTERN = Elemento predeterminado plantilla:
+LANG_DEFAULTWIKISTYLE = Diseño estándar:
+LANG_DELETE = Eliminar:
+
+LANG_DELETEALL = Borrar todos los finales
+LANG_DELETED = Borrar fecha
+
+LANG_DELFAV = Eliminar entrada de Favoritos
+
+LANG_DIRISEMPTY = Datos no disponibles.
+
+LANG_DOWNLOADCOUNT = Descargas:
+
+LANG_EDITLINK = Edit
+LANG_EDITLINKLOCKED = Entrada está siendo editado por
+LANG_EDITPATTERN = Entrada "Editar plantilla:
+
+LANG_EDITPATTERNS = Editar plantillas de introducción de
+
+LANG_EDITUSERS = Administrar usuarios
+LANG_EDITUSER = Cambiar de usuario:
+
+LANG_EXTALLOW = Permitir
+LANG_EXTFORBID = Prohibición:
+
+LANG_EXTUPLOAD = Tipos de archivo durante la carga
+
+LANG_FAILLOGINBANTIME = De bloqueo después de fracasos de los inicios de sesión (0) para un número ilimitado:
+
+LANG_FAILLOGINSALLOWED = Anúmero de inicios de sesión no está bloqueado por el usuario:
+
+LANG_FAVOURITES = Mis Favoritos
+
+LANG_FILE = Archivo
+
+LANG_FILEAFTERLOGIN = El archivo de descarga sólo se permite a los usuarios registrados.
+
+LANG_FILEINFO = Información de archivo
+
+LANG_FILES = Archivos
+
+LANG_FILESIZE = Tamaño
+
+LANG_FILESLIFETIME = Mover a la papelera, si es mayor que) (0 para nunca:
+
+LANG_FILESMAXUPLOADSIZE = Máximo tamaño de archivo al subir (0) para un número ilimitado:
+
+LANG_FIRSTONLINE = Primera línea
+
+LANG_FROMFIRSTLOGIN = De la primera sesión
+
+LANG_FUNCTIONSPAGE = Funciones
+
+LANG_GENERALSETTINGS = General
+LANG_GROUP = Grupo
+LANG_HIDESMILEYBAR = Ocultar Smileys
+LANG_ID = ID
+
+LANG_IMAGE = Imagen
+LANG_INFINITE = Ilimitado
+
+LANG_INVALIDHEXCOLOR = Incorrecto:
+
+LANG_INVALIDMAIL = Dirección incorrecta de correo electrónico:
+
+LANG_INVALIDPARAGRAPH = Párrafo del sol:
+
+LANG_INVALIDSYNTAXATTRIB = Atributo del sol:
+
+LANG_INVALIDURL = URL incorrecta:
+
+LANG_ISPROTECTEDPAGE = Eliminar entrada no es posible
+LANG_ISLOCKED = Es editado por el momento ya.
+
+LANG_ISLOCKEDSHORT = Es editado
+LANG_ISPROTECTED = Leer la entrada
+LANG_ISPROTECTEDSHORT = Read
+LANG_LASTCHANGED = Última
+
+LANG_LASTONLINE = Ultimo Online
+
+LANG_LATESTFILESMENU = Últimos archivos
+LANG_LATESTFILESLIST = (Lista de)
+
+LANG_LATESTPAGESMENU = Envíos recientes
+
+LANG_LATESTPAGESLIST = (Lista de)
+
+LANG_LINKINGENTRIES = Artículos de referencia:
+
+LANG_LOGIN = Login
+
+LANG_LOGINFAILED = Login incorrecto.
+
+LANG_LOGINS = Logins
+
+LANG_LOGOUT = Cerrar sesión
+LANG_MINUTES = Minutos
+LANG_NO = No
+
+LANG_NOACTION = No posible acción
+
+LANG_NOBACKLINKS = Huérfanos entrada
+LANG_NOFAVOURITESFOUND = Favoritos guardados
+
+LANG_NOPATTERNFOUND = No template found
+
+LANG_NOSCRIPT_TOOLBAR = Debido a que su navegador no soporta JavaScript, no se puede insertar las etiquetas de sintaxis con un solo clic. Para dar formato al texto, debe escribir las etiquetas manualmente. Su ortografía exacta que usted ve cuando pasa el ratón sobre el icono.
+LANG_NOSUCHFILE = Archivo no existe:
+
+LANG_NOSUCHPAGE = Entrada no existe:
+
+LANG_NOSUCHUSER = Usuario no existe:
+
+LANG_NOTIMEFOUND = Marca de tiempo encontrado
+LANG_NOUSERFOUND = Ningún usuario encontrado
+LANG_ORPHANEDPAGES = Mensajes de huérfanos
+LANG_PAGE = Entrada
+LANG_PAGES = Entradas
+
+LANG_PAGESLIFETIME = Mover objetos en la basura cuando más) que (0 para nunca:
+
+LANG_PAGESLOCKTIME = Entrada son liberados por:
+LANG_PAGEVERSIONS = Versiones de entrada
+LANG_PASSWORD = Contraseña
+
+LANG_PASSWORDNEW = Nueva Contraseña:
+LANG_PASSWORDOLD = Old Password:
+
+LANG_PASSWORDREPEAT = Nueva contraseña de nuevo:
+
+LANG_PATTERNCREATE = Crear plantilla de introducción de
+LANG_PATTERN = Plantilla de elementos
+LANG_PATTERNNEW = Entrada nueva plantilla:
+
+LANG_PATTERNS = Plantillas de elementos
+LANG_PATTERNSEXISTENT = Plantillas entrada existente:
+
+LANG_PRINTVIEW = Vista de impresión
+LANG_RECENTFILES = Últimos archivos
+LANG_RECENTPAGES = Envíos recientes a
+
+LANG_REPLACEMENT = Reemplazos
+
+LANG_RESETPW = Perdí mi contraseña de usuario:
+LANG_RESTORE = Restaurar:
+LANG_SAVECHANGES = Guardar cambios
+LANG_SEARCHRESULTSFOR = Resultados de la búsqueda para
+
+LANG_SERVERTIME = Tiempo de servidor:
+
+LANG_SHORTENLINKLENGTH = Izquierda acortar el texto de:
+LANG_SHORTENNAMELENGTH = Entrada y acortar los nombres de archivo en los menús y hojas de cálculo desde:
+LANG_SHOWFILE = Descargar fichero:
+
+LANG_SHOWMAIL = Crear e-mail:
+
+LANG_SHOWNEWPAGE = Crear entrada:
+
+LANG_SHOWPAGE = Hoja de Mapa:
+
+LANG_SHOWPARAGRAPH = Ir a párrafo:
+
+LANG_SHOWPRINTVIEW = Vista de impresión
+LANG_SHOWSMILEYBAR = Mostrar Smileys
+LANG_SHOWSMILEYS = Smileys gráfica:
+
+LANG_SHOWURL = Sitio Web:
+
+LANG_SHOWUSERSONLINELIST = Usuarios registrados registrado en la lista de usuarios:
+
+LANG_SHOWVERSION = Mostrar:
+
+LANG_SPECIALCHARDESC = Los siguientes caracteres especiales son reemplazados en el wiki de la hora de crear nuevas entradas, con enlaces a Enträge no existentes y la carga de archivos::
+
+LANG_SPECIALCHARS = Especial
+LANG_STARTPAGE = Inicio
+
+LANG_STATISTICS = Wiki Estadísticas
+LANG_STATUS = Estado
+LANG_TESTPAGE = Prueba
+LANG_TILL = Hasta
+
+LANG_TIMEFORMAT = Formato de hora
+LANG_TRASHFILES = Los archivos eliminados
+LANG_TRASHPAGES = Mensajes eliminados
+LANG_UNLOCK = Desbloquear:
+LANG_UPLOAD = Carga de archivos
+LANG_UPLOADDATE = Uploaded:
+LANG_UPLOADEDBY = Subido por:
+LANG_USERSONLINE = Usuarios en línea
+LANG_USEHTMLTAG = "html" Permitir Tag:
+LANG_USERBANTIME = Bloqueo (0: ilimitado.)
+
+LANG_USERCHANGESAPPLY = Aplicar cambios:
+
+LANG_USERCREATEPAGE = Usuario
+LANG_USERDELETE = Borrar Usuario:
+
+LANG_USERID = ID
+
+LANG_USERIDLETIME = Logout si está inactivo durante más de::
+
+LANG_USERKICK = Kick:
+
+LANG_USERLIFETIME = Tiene (0: ilimitado.)
+
+LANG_USERNAME = Nombre de usuario
+LANG_USERPAGE = Mi Página de usuario
+LANG_USERS = Usuario
+LANG_USERCREATE = Crear usuario
+LANG_USERISOFFLINE = Usuario está en línea:
+LANG_USERISONLINE = Usuarios en línea:
+LANG_USERSETTINGS = My Wiki
+
+LANG_USERSEXISTENT = Usuarios existentes
+LANG_USERSNEW = Nuevo Usuario
+LANG_VERSION_RESTORE = Restaurar la versión anterior:
+LANG_VERSION_VIEW = View versiones anteriores:
+LANG_VERSIONS_VIEW = View versiones anteriores:
+LANG_WIKILANGUAGE = Idioma:
+LANG_WIKINAME = Nombre de la wiki:
+LANG_METADESC               = 
+LANG_METAKEY                = 
+LANG_WIKISETTINGS = Wiki de instalación
+LANG_WIKISTYLE = Diseño:
+
+LANG_YES = Sí
+LANG_YESWITHPAGE = Sí, incluso la página de usuario
+# Report phrases
+
+REPORT_CHANGES_APPLIED = Los cambios fueron aceptados.
+
+REPORT_CHANGES_APPLIED_NEXTACTION = Los cambios fueron adoptados y aparecen en la siguiente acción en vigor.
+
+REPORT_COMMENTCHANGED = Cambiado correctamente.
+
+REPORT_DIR_CLEAR_ERROR = directorio no pudieron ser liquidadas sin error:
+
+REPORT_DIR_CLEAR_SUCCESS = directorio vacío:
+REPORT_FALSELOGINS = Intentos de acceso fallidos desde el último acceso:
+REPORT_FILE_DEL_ERROR = El archivo no se puede eliminar:
+REPORT_FILE_DEL_SUCCESS = Archivo eliminado:
+
+REPORT_FILE_NOT_EXISTS = Archivo no existe:
+REPORT_FILE_REST_ERROR = El archivo no puede ser restaurada:
+REPORT_FILE_REST_EXISTS = El archivo ya existe en el directorio:
+REPORT_FILE_REST_SUCCESS = Archivo restaurado:
+REPORT_NOTHING_DONE = No se toman medidas.
+REPORT_NUM_INVALID = specificación debe contener sólo dígitos:
+
+REPORT_PAGE_DEL_ERROR = Entrada no puede ser eliminado:
+REPORT_PAGE_DEL_SUCCESS = Entrada se elimina:
+
+REPORT_PAGE_NOT_EXISTS = Entrada no existe:
+REPORT_PAGE_REST_ERROR = Entrada no puede ser recuperada:
+REPORT_PAGE_REST_EXISTS = Entrada ya existe en la lista de entrada:
+REPORT_PAGE_REST_SUCCESS = Entradas restauradas:
+
+REPORT_PATTERN_DEL_ERROR = Plantillas entrada no puede ser suprimido:
+REPORT_PATTERN_DELETED = Entrada eliminada plantilla:
+REPORT_PATTERN_NOT_EXISTS = Plantilla de entrada no existe:
+
+REPORT_PATTERN_SAVE_ERROR = Plantilla de entrada no puede ser guardada:
+REPORT_PATTERN_SAVE_SUCCESS= plantilla de elementos guardados:
+
+REPORT_PLEASECHANGEPW = En este momento está usando el sistema asigna una contraseña. Por favor, cambie de inmediato con "My Wiki"> "Cambiar contraseña".
+REPORT_PWD_CHANGED = La contraseña se ha cambiado.
+REPORT_PWD_ERROR = La contraseña no ha cambiado, el comando señaló a errores. Nota: La nueva contraseña debe tener al menos seis caracteres de longitud, grandes y pequeños contener letras y números.
+REPORT_UNLOCK_ERROR = Bloqueo no puede ser derogado:
+REPORT_UNLOCK_SUCCESS = Bloqueo se libera:
+REPORT_UPLOAD_ERROR = Error de subida. El archivo ya existe:
+REPORT_UPLOAD_EXT_ERROR = Error de subida. El archivo ha prohibido el tipo de archivo:
+REPORT_UPLOAD_SIZE_ERROR = Error de subida. De archivo más grande de lo permitido:
+REPORT_UPLOAD_SUCCESS = Carga correcta:
+REPORT_USERID_EXISTS = Error existentes ID de usuario:
+REPORT_USERID_INVALID = Poco amable de error ID de usuario (permite sólo números y letras minúsculas):
+
+REPORT_USER_ADDED = Usuario añadido:
+REPORT_USER_CHANGED = Usuario ha cambiado:
+REPORT_USER_DELETED = Usuario eliminado:
+REPORT_USER_KICKED = Usuario patadas:
+REPORT_USER_NOT_ADDED = Error, el usuario no se agrega:
+REPORT_USER_NOT_CHANGED = Error, los usuarios no va a durar:
+REPORT_USER_NOT_DELETED = Error, el usuario no se borran:
+REPORT_USER_NOT_RESETTED = Error, el usuario no se restablece:
+REPORT_USER_RESETTED = Restablecimiento de la contraseña de usuario:
+REPORT_VERSION_RESTORED = Entrada volver a declarar lo siguiente:
+REPORT_VERSIONS_NOT_EXIST = No hay guardada versiones de este artículo:
+REPORT_RESTOREVERSION_ERR = Versión de entrada no puede ser restaurada.
+REPORT_STILLHAVEINITIALPW = En este momento está usando el sistema asigna la contraseña, por favor, cambiar aquí. Nota: La nueva contraseña debe tener al menos seis caracteres de longitud, grandes y pequeños contener letras y números.
+# Frases de Estadística
+# Statistics phrases
+
+STAT_FILESCOUNT = Número de archivos:
+STAT_FILESLASTCHANGE = Subir Última actualización:
+STAT_FILESLONGEST = Archivo más grande:
+STAT_FILESMOSTDOWNLOADS = Número máximo de descargas:
+STAT_FILESMOSTLINKERS = Mayor número de enlaces:
+
+STAT_FILESSHORTEST = De archivo más pequeño:
+STAT_PAGESCOUNT = Número de entradas:
+STAT_PAGESLASTCHANGE = Última modificación:
+STAT_PAGESLONGEST = Entrada más larga:
+STAT_PAGESMOSTACTIVITY = Modificado con más frecuencia:
+STAT_PAGESMOSTBACKLINKS = Número más grande:
+STAT_PAGESSHORTEST = Más corta la entrada:
+STAT_USERSCOUNT = Número de usuarios:
+STAT_USERSMOSTACTIVITY = Número de inicios de sesión más grande:
+STAT_USERSLATEST = Usuario más reciente:
+
+
+# Traducido por Taycom

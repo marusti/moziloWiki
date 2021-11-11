@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--
+
+		moziloWiki - printstyle/template.html
+
+		The print template file for moziloWiki. Feel free to change 
+		it to your personal purposes.
+		
+		Arvid Zimmermann 2006 <moziloWiki@azett.com>
+
+-->
+
+<html>
+	<head>
+		<style type="text/css"> @import "{STYLE_PATH}"; </style>
+		<title> {WIKI_TITLE} - {PAGE_TITLE} ({PRINT_VIEW})</title>
+	</head>
+
+	<body>
+		<div class="printheader">
+			<h2 class="printheader">{WIKI_TITLE} - {PAGE_TITLE}</h2>
+			{LAST_CHANGE} {AT} {TIME}
+		</div>
+		<div class="printcontent">
+			{CONTENT}
+		</div>
+	</body>
+
+</html>

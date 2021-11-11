@@ -1,0 +1,1 @@
+[ueber1|Administrator]Das ist die Benutzerseite des Administrators. Standardmäßig wird für jeden neuen Benutzer eine eigene Benutzerseite angelegt, auf der der Benutzer etwas von sich kundtun kann. Die Benutzerseiten können von anderen Benutzern zwar editiert, aber nicht gelöscht werden.
