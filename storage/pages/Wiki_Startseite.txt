@@ -1,8 +1,11 @@
-[ueber1|moziloWiki - das Wiki für Einsteiger][fett|moziloWiki] ist das [fett|Wiki für Einsteiger] - problemlos einzurichten, leicht zu administrieren und komfortabel zu benutzen. Das Wiki kommt zudem komplett [fett|ohne eine Datenbank] aus.[bildrechts|mozilo.jpg][ueber2|Herzlich Willkommen in Ihrem moziloWiki!] Wenn Sie sich einen Moment Zeit nehmen, sich mit dem System zu befassen, wollen Sie seine [fett|einfache Art] nicht mehr missen.
+[bildrechts|mozilo.jpg][ueber1|moziloWiki - das Wiki für Einsteiger][fett|moziloWiki] ist das [fett|Wiki für Einsteiger] - problemlos einzurichten, leicht zu administrieren und komfortabel zu benutzen. 
 
-Schauen Sie sich doch zum Beispiel an, wie bequem sich die Wiki-Inhalte mit [fett|Hilfe] der [eintrag|Wiki_Syntax] bearbeiten lassen! Verspielte Naturen können sich auch gleich auf der [eintrag|Wiki_Testseite] austoben.
+Es eignet sich vor allem als [fett|Wissensspeicher und Kommunikationsmedium] für [fett|kleine und mittlere Projekte]. moziloWiki kommt zudem komplett [fett|ohne eine Datenbank] aus.
 
-[ueber2|moziloWiki im Internet]Es lohnt sich, auf [link|http://wiki.mozilo.de] vorbei zuschauen. Dort finden Sie detaillierte Informationen zum Arbeiten mit Ihrem moziloWiki und immer die [fett|neueste Wiki-Version zum herunter laden]. Wenn Sie Fragen an die Entwickler haben, finden Sie dort auch die nötigen Kontaktinformationen.
+moziloWiki ist [fett|freie Software] und steht unter der [fett|General Public License (GPL)] [eintrag|Lizenz]. Es darf [fett|absolut kostenlos] heruntergeladen, verwendet und weitergegeben werden.[ueber2|Herzlich Willkommen in Ihrem moziloWiki!] Wenn Sie sich einen Moment Zeit nehmen, sich mit dem System zu befassen, wollen Sie seine [fett|einfache Art] nicht mehr missen.
+
+Schauen Sie sich doch zum Beispiel an, wie bequem sich die Wiki-Inhalte mit [fett|Hilfe] der [eintrag|Wiki_Syntax] bearbeiten lassen! Verspielte Naturen können sich auch gleich auf der [eintrag|Wiki_Testseite] austoben.[ueber2|Was brauche ich für moziloWiki?]
+moziloWiki benötigt einen [fett|Webserver], der [fett|PHP 5.1.2] oder höher unterstützt. Eine Datenbank wird nicht benötigt.[ueber2|moziloWiki im Internet]Es lohnt sich, auf [link|http://wiki.mozilo.de] vorbei zuschauen. Dort finden Sie detaillierte Informationen zum Arbeiten mit Ihrem moziloWiki und immer die [fett|neueste Wiki-Version zum herunter laden]. Wenn Sie Fragen an die Entwickler haben, finden Sie dort auch die nötigen Kontaktinformationen.
 
 Weiterhin steht Ihnen das [html|<a href="https://www.mozilo.de/forum/index.php/board,6.0.html">mozilo-Supportforum</a>] bei Fragen zur Seite.
 

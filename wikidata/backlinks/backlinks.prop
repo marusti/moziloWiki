@@ -1,4 +1,5 @@
-Administrator = das_ist_ein_sehr_langer_name_fuer_einen_artikel,test-1,Tester,Wiki-Syntax,Wiki_Syntax
+Administrator = Tester,Wiki-Syntax,Wiki_Syntax,das_ist_ein_sehr_langer_name_fuer_einen_artikel,test-1
+Lizenz = Wiki_Startseite
 Wiki_Funktionen = 
 Wiki_Startseite = 
 Wiki_Syntax = Wiki_Testseite,Wiki_Startseite

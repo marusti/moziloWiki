@@ -1,0 +1,3 @@
+[ueber1|Lizenz]moziloWiki ist [fett|OpenSource-Software] und steht unter der [html|<a href="http://www.gnu.org/licenses/gpl-3.0.txt" title="externer Link: General Public License (GPL)">General Public License (GPL)</a>]. Das heißt, es darf für alle Zwecke [fett|kostenlos] genutzt, beliebig verändert und weiterverbreitet werden; veränderte Versionen unterliegen wieder der GPL.
+
+Komponenten, die in moziloWiki zum Einsatz kommen
