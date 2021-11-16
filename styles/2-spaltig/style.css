@@ -1,26 +1,67 @@
 /*
 
-		moziloWiki - style.css
+		moziloWiki 2-spaltig - style.css
 		
-		A CSS file for moziloWiki. Feel free to change it to your
-		personal purposes.
+		A CSS file for moziloWiki. Feel free to change it to your personal purposes.
 		
 		moziloWiki 2021 <kontakt@mozilo.de>
 		
 */
 
-:root {
-  --main-color: #306897!important
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.4;
+  background-color: #C1E0D2
+}
   
   html {
   scroll-behavior: smooth;
 }
 
+/*Grid*/
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+[class*='col-'] {
+  flex-basis: 100%;
+  max-width: 100%;
+  padding: 10px
+}
+
+header {padding: 10px; background: #00382B; color: #fff; margin-bottom: 10px}
+
+.text-center {
+text-align: center;
+}
+
+.text-right {
+text-align: right;
+}
+
+.small {
+font-size: .8rem
+}
+
 /*Mein Wiki*/
 
 .myWiki {
-padding: var(--main-padding)
+padding: 10px
 }
 
 .myWiki-header {
@@ -28,13 +69,18 @@ font-weight: 700
 }
 
 .myWiki .even, .myWiki .uneven {display: flex; align-items: center}
-.even > div, .uneven > div {width: 50%}
-.uneven {background: var(--border-color);}
+.even > div, .uneven > div {width: 50%; padding: 10px}
+
 .summary {display: flex;justify-content:flex-end}
 
-.menubutton {cursor: pointer;}
-
-.menutext {width: 100%}
+select {
+	width: 100%;
+background: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+margin: 5px 0;
+cursor: pointer;
+}
 
 /*wikiTable*/
 
@@ -45,13 +91,22 @@ text-align: center;
 }
 
 .wikiTable thead {
-  text-align: center;  
+  text-align: center; 
 }
 
 .wikiTable th {
-background: var(--main-color);
-Color: #fff;
+background: #00382B;
+color: #fff;
 }
+
+.menubutton {
+background: #00382B;
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
 
 
 div.headline {
@@ -61,12 +116,10 @@ div.headline {
    font-weight:bold;
    text-align:center;
    border:1px solid black;
-   background-color:#EEEEEE;
+   background-color:#F4F3E8;
 }
 div.main {
-   width:780px;
-   margin:0px auto;
-   text-align:left;
+display: flex
 }
 div.menu {
 	float:left;
@@ -82,24 +135,33 @@ div.allcontent {
 div.description {
 
 }
-#top, #bottom {justify-content: flex-end;
-display: flex;
-align-items: center	
-	}
-
+#top, #bottom {
+	background: #00382B; color: #fff; 
+}
 div.content {
 
 }
+.submenu {
+	
+	margin-bottom: 10px;
+border: 1px solid #F4F3E8;
+border-radius: 5px;
+
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
+    background: #fff;
+
+
+}
+.submenu:last-of-type {margin-bottom: 0}
 div.submenudescription {
-    background: var(--main-color);
-    color: var(--main-bg-color);
-    padding: var(--main-padding);
+    background: #00382B;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+
 }
 div.submenucontent, div.submenucontentscroll {
-flex: 1;
-    padding: var(--main-padding);
-    border: 1px solid var(--border-color);
-     margin-bottom: var(--main-margin);
+padding: 10px;
 }
 div.submenucontentscroll { 
 max-height:150px;
@@ -109,9 +171,11 @@ div.wikiinfo {
 	color:#999999;
 }
 
+a:link {color: #1B5240; text-decoration: none;}
+a:hover {text-decoration: underline;}
 
 a.pending {
-	color:var(--warning-color);
+	color:#1B5240;
 }
 a.pending:before {
 	content: url('../../pic/nopageicon.gif');
@@ -124,7 +188,7 @@ a.url:before {
 	margin:0px 4px 3px 0px;
 }
 a.page {
-	color:var(--warning-color);
+	color:#1B5240;
 }
 a.page:before {
 	content: url('../../pic/pageicon.gif');
@@ -152,25 +216,29 @@ a.wikiinfolink {
 
 }
 a.activemenupoint {
-	color:#000000;
+	font-weight: 700
 }
 
 
 input.menutext, input.menubutton, select.menu, select.content {
 
 }
+
+input {width: 100%; margin: 5px 0; padding: 5px 10px; border-radius: 5px; white-space: normal;}
 input.narrow {
-	width:30px;
+	width:50%;
 }
+
+input[type=image] {width: initial; border: 1px solid #F4F3E8; border-radius: 5px; padding: 5px}
 textarea {
 
 }
 
 td.even {
-
+ 
 }
-td.uneven {
-
+.uneven {
+background: #F4F3E8
 }
 td.summary {
 
@@ -178,15 +246,17 @@ td.summary {
 p.reportok {
 /*	margin-bottom:15px;*/
 	padding:5px;
-	background-color:var(--success-color);
-	color: #fff
+	background-color:#009900;
+	color: #fff;
+	text-align: center;
 /*	border:1px solid #339933;*/
 }
 p.reportwarning {
 /*	margin-bottom:15px;*/
 	padding:5px;
-	background-color:var(--alert-color);
-	color: #fff
+	background-color:#CC0033;
+	color: #fff;
+	text-align: center;
 /*	border:1px solid #CC3333;*/
 }
 div.code {
@@ -234,7 +304,7 @@ em.inactivemenupoint {
 	color:#777777;
 }
 em.deadlink {
-	color:var(--alert-color);
+	color:red;
 	text-decoration:line-through;
 	font-weight:700;
 }
@@ -254,21 +324,19 @@ em.underlined {
 
 
 img {
-	
+	max-width: 100%;
+	height: auto;
+	margin: 5px
 }
 img.leftcontentimage {
-	margin:8px;
 	border:1px solid;
 	max-width:200px;
 	float:left;
-	margin-left:0px;
 }
 img.rightcontentimage {
-	margin:8px;
 	border:1px solid;
 	max-width:200px;
 	float:right;
-	margin-right:0px;
 }
 img.js {
 	border: 1px solid #c0c0c0;
@@ -300,6 +368,11 @@ a.login_wikilink:hover {
 
 }
 
+h1,h2,h3 {color: #00382B;margin: 10px 0}
+
+h1 {font-size: 1.4rem}
+h2 {font-size: 1.2rem}
+h3 {font-size: 1.1rem}
 
 /*Login*/
 
@@ -351,14 +424,74 @@ a.login_wikilink:hover {
 
 
 @media only screen and (min-width: 36rem) {
-.mr-grid {  display: flex;
-  min-height: 100vh;
-  flex-direction: column;}
-main {flex:1}
-header,footer {  flex:0!important}
+
+	
 }
 
 @media only screen and (min-width: 48rem) {
+
+	
+	/*Grid*/
+
+  .col-m-1 {
+    flex-basis: 8.33%;
+    max-width: 8.33%
+  }
+
+  .col-m-2 {
+    flex-basis: 16.6%;
+    max-width: 16.66%
+  }
+
+  .col-m-3 {
+    flex-basis: 25%;
+    max-width: 25%
+  }
+
+  .col-m-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%
+  }
+
+  .col-m-5 {
+    flex-basis: 41.67%;
+    max-width: 41.67%
+  }
+
+  .col-m-6 {
+    flex-basis: 50%;
+    max-width: 50%
+  }
+
+  .col-m-7 {
+    flex-basis: 58.33%;
+    max-width: 58.33%
+  }
+
+  .col-m-8 {
+    flex-basis: 66.67%;
+    max-width: 66.67%
+  }
+
+  .col-m-9 {
+    flex-basis: 75%;
+    max-width: 75%
+  }
+
+  .col-m-10 {
+    flex-basis: 83.33%;
+    max-width: 83.33%
+  }
+
+  .col-m-11 {
+    flex-basis: 91.67%;
+    max-width: 91.67%
+  }
+
+  .col-m-12 {
+    flex-basis: 100%;
+    max-width: 100%
+  }
 
   /*Login*/
 

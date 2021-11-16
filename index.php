@@ -8,7 +8,7 @@
 		distributed under GPL (see license.txt for details). Feel 
 		free to suit it to your personal purposes.
 		
-		Arvid Zimmermann 2007 <moziloWiki@azett.com>
+		moziloWiki 2021 <kontakt@mozilo.de>
 		
 */
 
@@ -458,7 +458,7 @@
 	elseif ($ACTION == "edit")
 		$html = preg_replace('/{SEARCH_USERS}/', "<em class=\"inactivemenupoint\">".$wikilanguage->get("BUTTON_SEARCHUSERS")."</em>", $html);
 	else
-		$html = preg_replace('/{SEARCH_USERS}/', "<form name=\"searchusers\" method=\"get\" action=\"index.php\"><input type=\"hidden\" name=\"action\" value=\"searchusers\" /><input class=\"menutext\" type=\"text\" name=\"query\" value=\"\" /><br /><input class=\"menubutton\" type=\"submit\" value=\"".$wikilanguage->get("BUTTON_SEARCHUSERS")."\" /></form>", $html);
+		$html = preg_replace('/{SEARCH_USERS}/', "<form name=\"searchusers\" method=\"get\" action=\"index.php\"><input type=\"hidden\" name=\"action\" value=\"searchusers\" /><input class=\"menutext\" type=\"text\" name=\"query\" value=\"\" /><input class=\"menubutton\" type=\"submit\" value=\"".$wikilanguage->get("BUTTON_SEARCHUSERS")."\" /></form>", $html);
 
 	if (!$GRP_EDITCONTENT)
 		$html = preg_replace('/{UPLOAD}/', "", $html);
@@ -563,14 +563,14 @@
 		}
 		else {
 			$html = preg_replace('/{USER_LOGOUT}/', "<a href=\"login.php?logout=true&amp;page=".strip_tags(htmlentities($_GET['page']))."\" title=\"".$wikilanguage->get("LANG_LOGOUT")."\" accesskey=\"x\"><img src=\"pic/logouticon.gif\" class=\"noborder\" alt=\"".$wikilanguage->get("LANG_LOGOUT")."\" /></a>", $html);
-			$html = preg_replace('/{SEARCH_PAGES}/', "<form name=\"searchpages\" method=\"get\" action=\"index.php\"><input type=\"hidden\" name=\"action\" value=\"searchpages\" /><input class=\"menutext\" type=\"text\" name=\"query\" value=\"\" /><br /><input class=\"menubutton\" type=\"submit\" value=\"".$wikilanguage->get("BUTTON_SEARCHPAGES")."\" /></form>", $html);
-			$html = preg_replace('/{SEARCH_FILES}/', "<form name=\"searchfiles\" method=\"get\" action=\"index.php\"><input type=\"hidden\" name=\"action\" value=\"searchfiles\" /><input class=\"menutext\" type=\"text\" name=\"query\" value=\"\" /><br /><input class=\"menubutton\" type=\"submit\" value=\"".$wikilanguage->get("BUTTON_SEARCHFILES")."\" /></form>", $html);
+			$html = preg_replace('/{SEARCH_PAGES}/', "<form name=\"searchpages\" method=\"get\" action=\"index.php\"><input type=\"hidden\" name=\"action\" value=\"searchpages\" /><input class=\"menutext\" type=\"text\" name=\"query\" value=\"\" /><input class=\"menubutton\" type=\"submit\" value=\"".$wikilanguage->get("BUTTON_SEARCHPAGES")."\" /></form>", $html);
+			$html = preg_replace('/{SEARCH_FILES}/', "<form name=\"searchfiles\" method=\"get\" action=\"index.php\"><input type=\"hidden\" name=\"action\" value=\"searchfiles\" /><input class=\"menutext\" type=\"text\" name=\"query\" value=\"\" /><input class=\"menubutton\" type=\"submit\" value=\"".$wikilanguage->get("BUTTON_SEARCHFILES")."\" /></form>", $html);
 			$html = preg_replace('/{LATEST_PAGES_LIST}/', "<a href=\"index.php?action=recentpages&amp;count=10\">".$wikilanguage->get("LANG_LATESTPAGESLIST")."</a>", $html);
 			$html = preg_replace('/{LATEST_FILES_LIST}/', "<a href=\"index.php?action=recentfiles&amp;count=10\">".$wikilanguage->get("LANG_LATESTFILESLIST")."</a>", $html);
 		}
 	}
 
-	$html = preg_replace('/{SEARCH_PAGES}/', "<form name=\"searchpages\" method=\"get\" action=\"index.php\"><input type=\"hidden\" name=\"action\" value=\"searchpages\" /><input class=\"menutext\" type=\"text\" name=\"query\" value=\"\" /><br /><input class=\"menubutton\" type=\"submit\" value=\"".$wikilanguage->get("BUTTON_SEARCHPAGES")."\" /></form>", $html);
+	$html = preg_replace('/{SEARCH_PAGES}/', "<form name=\"searchpages\" method=\"get\" action=\"index.php\"><input type=\"hidden\" name=\"action\" value=\"searchpages\" /><input class=\"menutext\" type=\"text\" name=\"query\" value=\"\" /><input class=\"menubutton\" type=\"submit\" value=\"".$wikilanguage->get("BUTTON_SEARCHPAGES")."\" /></form>", $html);
 	$html = preg_replace('/{FAVOURITE_LINK}/', getFavLink($PAGE_TITLE), $html);
 	$html = preg_replace('/{USER_NAME}/', $wikiusers->getFullName($CURRENTUSER), $html);
 	$html = preg_replace('/{WIKI_TITLE}/', $mainsettings->getWikiName(), $html);
@@ -1853,7 +1853,7 @@
 					$highlight = "&amp;highlight=".htmlentities($_GET['query']);
 				else
 					$highlight = "";
-				return "<a href=\"$file$highlight\" class=\"page\" title=\"".$wikilanguage->get("LANG_SHOWPAGE")." &quot;$file&quot;\">$editedfilename</a>";
+				return "<a href=\"$file$highlight\" class=\"page\" title=\"".$wikilanguage->get("LANG_SHOWPAGE")." &quot;$file&quot;\">".str_replace('_', ' ', $editedfilename)."</a>";
 			}
 			elseif ($GRP_ANONYMOUS)
 				return "<a class=\"pending\" title=\"".$wikilanguage->get("LANG_NOSUCHPAGE")." &quot;$file&quot;\">$editedfilename</a>";
@@ -2300,7 +2300,7 @@
 			$checked1 = "checked=\"checked\" ";
 		else
 			$checked2 = "checked=\"checked\" ";
-		$table .= "<div class=".returnTdClass(1)."><div>".$wikilanguage->get("LANG_EXTUPLOAD")." <input type=\"radio\" name=\"uploadextallow\" value=\"true\" $checked1/> ".$wikilanguage->get("LANG_EXTALLOW")." <input type=\"radio\" name=\"uploadextallow\" value=\"false\" $checked2/>".$wikilanguage->get("LANG_EXTFORBID")."</div>"
+		$table .= "<div class=".returnTdClass(1)."><div style=\"display:flex; align-items:center\">".$wikilanguage->get("LANG_EXTUPLOAD")." <input type=\"radio\" name=\"uploadextallow\" value=\"true\" $checked1/> ".$wikilanguage->get("LANG_EXTALLOW")." <input type=\"radio\" name=\"uploadextallow\" value=\"false\" $checked2/>".$wikilanguage->get("LANG_EXTFORBID")."</div>"
 		. "<div><input type=\"text\" name=\"uploadext\" value=\"".htmlentities($mainsettings->getUploadExtensions())."\" /></div></div>"
 	// row "set life time of files"
 		. "<div class=".returnTdClass(0)."><div>".$wikilanguage->get("LANG_FILESLIFETIME")."</div>"
@@ -3092,7 +3092,7 @@
 		global $wikilanguage;
 		global $wikistringcleaner;
 		
-		$backlinkstext = "<div class=\"submenu\"><div class=\"submenudescription\">".$wikistringcleaner->shortenName($PAGE_TITLE)." - ".$wikilanguage->get("LANG_BACKLINKS")."</div>"
+		$backlinkstext = "<div class=\"submenu\"><div class=\"submenudescription\">".str_replace('_', ' ', $wikistringcleaner->shortenName($PAGE_TITLE))." - ".$wikilanguage->get("LANG_BACKLINKS")."</div>"
 		. "<div class=\"submenucontentscroll\">";
 		$backlinksarray = getBacklinks($page);
 		if (count($backlinksarray) == 0)
@@ -3327,6 +3327,6 @@
 	function wikiInfo() {
 		global $mainsettings;
 		global $wikilanguage;
-		return "| <a href=\"https://wiki.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"wiki.mozilo.de\">moziloWiki 1.1 alpha2</a> | &copy; 2009 - <script> document.write(new Date().getFullYear()); </script> by <a href=\"https://www.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"mozilo.de\">mozilo</a> | ".$wikilanguage->get("LANG_SERVERTIME")." ".strftime($mainsettings->getTimeFormat(), time())." |";
+		return "| <a href=\"https://wiki.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"wiki.mozilo.de\">moziloWiki 1.1 alpha3</a> | &copy; 2009 - <script> document.write(new Date().getFullYear()); </script> by <a href=\"https://www.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"mozilo.de\">mozilo</a> | ".$wikilanguage->get("LANG_SERVERTIME")." ".strftime($mainsettings->getTimeFormat(), time())." |";
 	}
 ?>

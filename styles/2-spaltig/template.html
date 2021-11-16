@@ -2,16 +2,15 @@
 
 <!--
 
-		moziloWiki - orange - template.html
+		moziloWiki 2-spaltig - template.html
 
-		The HTML template file for moziloWiki. Feel free to change 
-		it to your personal purposes.
+		The HTML template file for moziloWiki. Feel free to change it to your personal purposes.
 		
 		moziloWiki 2021 <kontakt@mozilo.de>
 
 -->
 
-<html id="a0">
+<html lang="de" id="a0">
 	<head>
 		<meta charset="utf-8">
 		<title> {WIKI_TITLE} - {PAGE_TITLE} </title>
@@ -19,12 +18,13 @@
 		<meta name="description" content="{META_DESC}">
     	<meta name="keywords" content="{META_KEY}">
     	<link rel="stylesheet" href="{STYLE_PATH}">
-    	<link rel="stylesheet" href="styles/moziloWiki/cssonly.css">
+    	<link rel="icon" type="image/x-icon" href="styles/2-spaltig/favicon.ico">
+		<link rel="icon" type="image/png" href="styles/2-spaltig/apple-touch.png" sizes="152x152">
 	</head>
 
 	<body>	
-    <div class="mr-grid">	        
-		<main class="row">
+    <div class="wrapper">  
+    	<div class="main">  
 			<aside class="col-m-2">
 			{LOGIN_FORM}
 				<div class="submenudescription">{USER_NAME} {USER_LOGOUT}</div>
@@ -43,28 +43,7 @@
 						<div class="menuitem">{ALL_USERS}</div>
 						<div class="menuitem">{SEARCH_USERS}</div>
 					</div>
-					{USERSONLINE_LIST}
-					{USER_FAVOURITES}
-					{BACKLINKS_LIST}
-	</aside>
-	<div class="col-m-8">
-	<div class="bg-main pa text-center ma-b">
-						{WIKI_TITLE} - {PAGE_TITLE}
-					</div>
-					<div class="allcontent">
-						<div class="row bg-main pagination-right small ma-0 pa-r pa-l" id="top">
-							{LAST_CHANGE} {BY} {LAST_CHANGER} {AT} {TIME} | {PRINT_LINK} | {FAVOURITE_LINK} | {EDIT}
-						</div>
-						<div class="border pa">
-							{CONTENT}
-						</div>
-						<div class="row bg-main pagination-right small ma-0 pa-r pa-l" id="bottom">
-							{LAST_CHANGE} {BY} {LAST_CHANGER} {AT} {TIME} | {PRINT_LINK} | {FAVOURITE_LINK} | {EDIT}
-						</div>
-						
-					</div>
-	</div>
-	<aside class="col-m-2">
+							<div class="submenu">
 		<div class="submenudescription">{PAGES}</div>
 					<div class="submenucontent">
 						<div class="menuitem">{ALL_PAGES}</div>
@@ -74,6 +53,8 @@
 						<div class="menuitem">{NEW_PAGE}</div>
 						<div class="menuitem">{SEARCH_PAGES}</div>
 					</div>
+		</div>
+		<div class="submenu">
 					<div class="submenudescription">{FILES}</div>
 					<div class="submenucontent">
 						<div class="menuitem">{ALL_FILES}</div>
@@ -82,12 +63,31 @@
 						<div class="menuitem">{UPLOAD}</div>
 						<div class="menuitem">{SEARCH_FILES}</div>
 					</div>
+		</div>
 					{LATEST_PAGES_MENU}
 					{LATEST_FILES_MENU}
-			</aside>
-		</main>
-      <footer class="row text-center">
-			<div class="col-m-12 wikiinfo small">{WIKI_INFO}</div>
+					{USERSONLINE_LIST}
+					{USER_FAVOURITES}
+					{BACKLINKS_LIST}
+	</aside>
+	<div class="col-m-10">
+	<header class="text-center">{WIKI_TITLE} - {PAGE_TITLE}</header>
+					<div class="allcontent">
+						<div class="text-right small" id="top">
+							{LAST_CHANGE} {BY} {LAST_CHANGER} {AT} {TIME} | {PRINT_LINK} | {FAVOURITE_LINK} | {EDIT}
+						</div>
+						<div class="content">
+							{CONTENT}
+						</div>
+						<div class="text-right small" id="bottom">
+							{LAST_CHANGE} {BY} {LAST_CHANGER} {AT} {TIME} | {PRINT_LINK} | {FAVOURITE_LINK} | {EDIT}
+						</div>
+						
+					</div>
+	</div>
+			</div>
+      <footer class="text-center small">
+			{WIKI_INFO}
 		</footer>
     </div>		
 	<script src="buttons.js" type="text/javascript"></script>

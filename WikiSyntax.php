@@ -186,7 +186,7 @@ if (isset($_GET['page'])) {
 			elseif ($attribute == "eintrag"){
 				$cleanedvalue = $this->wikistringcleaner->cleanThatString(html_entity_decode($value), false);
 				if (file_exists($DIR_PAGES.$cleanedvalue.$DEFAULT_PAGESEXT)) {
-					$content = str_replace ($match, "<a class=\"page\" title=\"".$wikilanguage->get("LANG_SHOWPAGE")." &quot;$cleanedvalue&quot;\" href=\"$cleanedvalue\">$cleanedvalue</a>", $content);
+					$content = str_replace ($match, "<a class=\"page\" title=\"".$wikilanguage->get("LANG_SHOWPAGE")." &quot;$cleanedvalue&quot;\" href=\"$cleanedvalue\">".str_replace('_', ' ', $cleanedvalue)."</a>", $content);
 					// get links to other entries and save them as their backlink
 					if ($currentpage <> "")
 						$this->wikibacklinks->addBacklink($cleanedvalue, $wikistringcleaner->cleanThatString($currentpage, false));

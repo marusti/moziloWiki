@@ -18,6 +18,8 @@
 		<meta name="description" content="{META_DESC}">
     	<meta name="keywords" content="{META_KEY}">
     	<link rel="stylesheet" href="{STYLE_PATH}">
+    	<link rel="icon" type="image/x-icon" href="styles/moziloWiki/favicon.ico">
+		<link rel="icon" type="image/png" href="styles/moziloWiki/apple-touch.png" sizes="152x152">
 	</head>
 
 	<body>	
@@ -25,6 +27,7 @@
     	<div class="main">  
 			<aside class="col-m-2">
 			{LOGIN_FORM}
+				<div class="submenu">
 				<div class="submenudescription">{USER_NAME} {USER_LOGOUT}</div>
 					<div class="submenucontent">
 						<div class="menuitem">{HOME}</div>
@@ -41,20 +44,21 @@
 						<div class="menuitem">{ALL_USERS}</div>
 						<div class="menuitem">{SEARCH_USERS}</div>
 					</div>
+					</div>
 					{USERSONLINE_LIST}
 					{USER_FAVOURITES}
 					{BACKLINKS_LIST}
 	</aside>
 	<div class="col-m-8">
-	<header>{WIKI_TITLE} - {PAGE_TITLE}</header>
+	<header class="text-center">{WIKI_TITLE} - {PAGE_TITLE}</header>
 					<div class="allcontent">
-						<div class="text-right small" id="top">
+						<div class="small" id="top">
 							{LAST_CHANGE} {BY} {LAST_CHANGER} {AT} {TIME} | {PRINT_LINK} | {FAVOURITE_LINK} | {EDIT}
 						</div>
 						<div class="content">
 							{CONTENT}
 						</div>
-						<div class="text-right small" id="bottom">
+						<div class="small" id="bottom">
 							{LAST_CHANGE} {BY} {LAST_CHANGER} {AT} {TIME} | {PRINT_LINK} | {FAVOURITE_LINK} | {EDIT}
 						</div>
 						

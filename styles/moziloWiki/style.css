@@ -15,25 +15,25 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   font-size: 15px;
   line-height: 1.4;
-  background-color: #fff
+  background-color: #f9f9f9
 }
-  
-  html {
+
+html {
   scroll-behavior: smooth;
 }
 
 /*Grid*/
 
 .wrapper {
-  display: flex;  
+  display: flex;
   flex-flow: row wrap;
 }
 
-.wrapper > * {
+.wrapper>* {
   padding: 10px;
   flex: 1 100%;
 }
@@ -44,328 +44,425 @@ body {
   padding: 10px
 }
 
-header {padding: 10px; background: #000033; color: #fff; margin-bottom: 10px}
+header {
+  padding: 10px;
+  background: #306897;
+  color: #fff;
+  margin-bottom: 10px
+}
 
 .text-center {
-text-align: center;
+  text-align: center;
 }
 
 .text-right {
-text-align: right;
+  text-align: right;
 }
 
 .small {
-font-size: .8rem
+  font-size: .8rem
 }
 
 /*Mein Wiki*/
 
 .myWiki {
-padding: var(--main-padding)
+  padding: 10px
 }
 
 .myWiki-header {
-font-weight: 700
+  font-weight: 700
 }
 
-.myWiki .even, .myWiki .uneven {display: flex; align-items: center}
-.even > div, .uneven > div {width: 50%; padding: 10px}
+.myWiki .even,
+.myWiki .uneven {
+  display: flex;
+  align-items: center
+}
 
-.summary {display: flex;justify-content:flex-end}
+.even>div,
+.uneven>div {
+  width: 50%;
+  padding: 10px
+}
+
+.summary {
+  display: flex;
+  justify-content: flex-end
+}
 
 select {
-	width: 100%;
-background: #fff;
-padding: 5px 10px;
-border-radius: 5px;
-margin: 5px 0;
-cursor: pointer;
+  width: 100%;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
 }
 
 /*wikiTable*/
 
 .wikiTable {
-width: 100%;
-table-layout: fixed;
-text-align: center;
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
 }
 
 .wikiTable thead {
-  text-align: center; 
-  padding:10px 
+  text-align: center;
 }
 
 .wikiTable th {
-background: #000033;
-color: #fff;
+  background: #306897;
+  color: #fff;
 }
 
 .menubutton {
-background: #000033;
-color: #fff;
-padding: 5px 10px;
-border-radius: 5px;
-cursor: pointer;
+  background: #306897;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
 
 div.headline {
-   margin-bottom:10px;
-   padding:5px;
-   font-size:16px;
-   font-weight:bold;
-   text-align:center;
-   border:1px solid black;
-   background-color:#EEEEEE;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #EEEEEE;
 }
+
 div.main {
-display: flex
+  display: flex
 }
+
 div.menu {
-	float:left;
-	margin:0px;
-	padding:0px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
 }
+
 div.menuitem {
-/*	margin:2px 10px;*/
+  /*	margin:2px 10px;*/
 }
-div.allcontent {
 
-}
-div.description {
+div.allcontent {}
 
-}
-#top, #bottom {
-	background: #000033; color: #fff; 
-}
-div.content {
+div.description {}
 
+#top,
+#bottom {
+  background: #306897;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+
+div.content {}
+
 .submenu {
-	
-	margin-bottom: 10px;
-border: 1px solid #eee;
-border-radius: 5px
-}
-.submenu:last-of-type {margin-bottom: 0}
-div.submenudescription {
-    background: #000033;
-    color: #fff;
-    padding: 10px;
-}
-div.submenucontent, div.submenucontentscroll {
-padding: 10px;
-}
-div.submenucontentscroll { 
-max-height:150px;
-	overflow:auto;
-}
-div.wikiinfo {
-	color:#999999;
+
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
+  background: #fff;
+
+
 }
 
-a:link {color: #000033}
+.submenu:last-of-type {
+  margin-bottom: 0
+}
+
+div.submenudescription {
+  background: #306897;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+
+}
+
+div.submenucontent,
+div.submenucontentscroll {
+  padding: 10px;
+}
+
+div.submenucontentscroll {
+  max-height: 150px;
+  overflow: auto;
+}
+
+div.wikiinfo {
+  color: #999999;
+}
+
+a:link {
+  color: #eb6236;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 a.pending {
-	color:var(--warning-color);
+  color: #eb6236;
 }
+
 a.pending:before {
-	content: url('../../pic/nopageicon.gif');
-	margin:0px 4px 3px 0px;
+  content: url('../../pic/nopageicon.gif');
+  margin: 0px 4px 3px 0px;
 }
-a.url {
-}
+
+a.url {}
+
 a.url:before {
-	content: url('../../pic/urlicon.gif');
-	margin:0px 4px 3px 0px;
+  content: url('../../pic/urlicon.gif');
+  margin: 0px 4px 3px 0px;
 }
+
 a.page {
-	color:var(--warning-color);
+  color: #eb6236;
 }
+
 a.page:before {
-	content: url('../../pic/pageicon.gif');
-	margin:0px 4px 3px 0px;
+  content: url('../../pic/pageicon.gif');
+  margin: 0px 4px 3px 0px;
 }
-a.file {
-}
+
+a.file {}
+
 a.file:before {
-	content: url('../../pic/fileicon.gif');
-	margin:0px 4px 3px 0px;
+  content: url('../../pic/fileicon.gif');
+  margin: 0px 4px 3px 0px;
 }
-a.mail {
-}
+
+a.mail {}
+
 a.mail:before {
-	content: url('../../pic/mailicon.gif');
-	margin:0px 4px 3px 0px;
+  content: url('../../pic/mailicon.gif');
+  margin: 0px 4px 3px 0px;
 }
-a.paragraph {
-}
+
+a.paragraph {}
+
 a.paragraph:before {
-	content: url('../../pic/paragraphicon.gif');
-	margin:0px 4px 3px 0px;
+  content: url('../../pic/paragraphicon.gif');
+  margin: 0px 4px 3px 0px;
 }
-a.wikiinfolink {
 
-}
+a.wikiinfolink {}
+
 a.activemenupoint {
-	color:#000000;
+  font-weight: 700
 }
 
 
-input.menutext, input.menubutton, select.menu, select.content {
+input.menutext,
+input.menubutton,
+select.menu,
+select.content {}
 
+input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: normal;
 }
 
-input {width: 100%; margin: 5px 0; padding: 5px 10px; border-radius: 5px}
+input[type=submit] {
+width: initial
+}
+
 input.narrow {
-	width:50%;
+  width: 50%;
 }
+
+input[type=image] {
+  width: initial;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 5px;
+  background: #fff
+}
+
 textarea {
-
+  width: 100%
 }
 
-td.even {
- 
-}
+td.even {}
+
 .uneven {
-background: #eee
+  background: #eee
 }
-td.summary {
 
-}
+td.summary {}
+
 p.reportok {
-/*	margin-bottom:15px;*/
-	padding:5px;
-	background-color:var(--success-color);
-	color: #fff
-/*	border:1px solid #339933;*/
+  /*	margin-bottom:15px;*/
+  padding: 5px;
+  background-color: darkgreen;
+  color: #fff;
+  text-align: center;
+  /*	border:1px solid #339933;*/
 }
+
 p.reportwarning {
-/*	margin-bottom:15px;*/
-	padding:5px;
-	background-color:var(--alert-color);
-	color: #fff
-/*	border:1px solid #CC3333;*/
+  /*	margin-bottom:15px;*/
+  padding: 5px;
+  background-color: #CC0033;
+  color: #fff;
+  text-align: center;
+  /*	border:1px solid #CC3333;*/
 }
+
 div.code {
-	padding:5px;
-	margin:5px;
-	font-family:monospace;
-	background-color:#FAFAFA;
-	border:1px dotted #bbbbbb;
+  padding: 5px;
+  margin: 5px;
+  font-family: monospace;
+  background-color: #FAFAFA;
+  border: 1px dotted #bbbbbb;
 }
+
 p.backlinks {
-	padding:5px;
-	margin:5px;
-	margin-bottom:15px;
-	background-color:#FAFAFA;
-	border:1px solid #bbbbbb;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 15px;
+  background-color: #FAFAFA;
+  border: 1px solid #bbbbbb;
 }
 
 .noborder {
-	border:none;
+  border: none;
 }
+
 .changedtodaymarker {
-	color:#dd0000;
-	font-weight:bold;
+  color: #dd0000;
+  font-weight: bold;
 }
+
 .changedlastsevendaysmarker {
-	color:#dd9900;
-	font-weight:bold;
+  color: #dd9900;
+  font-weight: bold;
 }
 
 em {
-	font-style:normal;
-	font-weight:normal;
-	font:inherit;
+  font-style: normal;
+  font-weight: normal;
+  font: inherit;
 }
+
 em.highlight {
-	padding:0px 1px;
-	font-size:inherit;
-	background-color:#dd0000;
-	color:#ffffff;
-	font-size:inherit;
+  padding: 0px 1px;
+  font-size: inherit;
+  background-color: #dd0000;
+  color: #ffffff;
+  font-size: inherit;
 }
+
 em.inactivemenupoint {
-	font-weight:700;
-	text-decoration:none;
-	color:#777777;
+  font-weight: 700;
+  text-decoration: none;
+  color: #777777;
 }
+
 em.deadlink {
-	color:red;
-	text-decoration:line-through;
-	font-weight:700;
+  color: red;
+  text-decoration: line-through;
+  font-weight: 700;
 }
+
 em.bold {
-	font-weight:700;
+  font-weight: 700;
 }
+
 em.italic {
-	font-style:italic;
+  font-style: italic;
 }
+
 em.bolditalic {
-	font-weight:bold;
-	font-style:italic;
+  font-weight: bold;
+  font-style: italic;
 }
+
 em.underlined {
-	text-decoration:underline;
+  text-decoration: underline;
 }
 
 
 img {
-	max-width: 100%;
-	height: auto;
-	margin: 5px
+  max-width: 100%;
+  height: auto;
+  margin: 5px
 }
+
 img.leftcontentimage {
-	margin:8px;
-	border:1px solid;
-	max-width:200px;
-	float:left;
-	margin-left:0px;
+  border: 1px solid;
+  max-width: 200px;
+  float: left;
 }
+
 img.rightcontentimage {
-	margin:8px;
-	border:1px solid;
-	max-width:200px;
-	float:right;
-	margin-right:0px;
+  border: 1px solid;
+  max-width: 200px;
+  float: right;
 }
+
 img.js {
-	border: 1px solid #c0c0c0;
-/*	height: 24px;*/
-	padding: 5px;
-	background-color: #FFFFFF;
-	margin: 2px;
+  border: 1px solid #c0c0c0;
+  /*	height: 24px;*/
+  padding: 5px;
+  background-color: #FFFFFF;
+  margin: 2px;
 }
+
 img.js:hover {
-	background-color: #AFC4DE;
+  background-color: #AFC4DE;
 }
+
 img.jss {
-	border: 1px solid #c0c0c0;
-	padding: 1px;
-	background-color: #FFFFFF;
-	margin: 2px;
+  border: 1px solid #c0c0c0;
+  padding: 1px;
+  background-color: #FFFFFF;
+  margin: 2px;
 }
+
 img.jss:hover {
-	background-color: #AFC4DE;
+  background-color: #AFC4DE;
 }
 
-div.login_loginbox {
+div.login_loginbox {}
 
+a.login_wikilink {}
+
+a.login_wikilink:hover {}
+
+h1,
+h2,
+h3 {
+  color: #306897;
+  margin: 10px 0
 }
-a.login_wikilink {
 
-}
-a.login_wikilink:hover {
-
+h1 {
+  font-size: 1.4rem
 }
 
-h1,h2,h3 {color: #000033;margin: 10px 0}
+h2 {
+  font-size: 1.2rem
+}
 
-h1 {font-size: 1.4rem}
-h2 {font-size: 1.2rem}
-h3 {font-size: 1.1rem}
+h3 {
+  font-size: 1.1rem
+}
 
 /*Login*/
 
@@ -416,15 +513,12 @@ h3 {font-size: 1.1rem}
 }
 
 
-@media only screen and (min-width: 36rem) {
-
-	
-}
+@media only screen and (min-width: 36rem) {}
 
 @media only screen and (min-width: 48rem) {
 
-	
-	/*Grid*/
+
+  /*Grid*/
 
   .col-m-1 {
     flex-basis: 8.33%;
@@ -496,20 +590,16 @@ h3 {font-size: 1.1rem}
       ". . login . ."
       ". . . . ."
   }
-  
+
   .avatar {
-  top: -50px;
-  width: 95px;
-  height: 95px;
-  padding: 10px;
-}
+    top: -50px;
+    width: 95px;
+    height: 95px;
+    padding: 10px;
+  }
 
 }
 
-@media only screen and (min-width: 62rem) {
+@media only screen and (min-width: 62rem) {}
 
-}
-
-@media only screen and (min-width: 75rem) {
-
-}
+@media only screen and (min-width: 75rem) {}
