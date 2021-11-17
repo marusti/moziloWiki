@@ -137,7 +137,10 @@ div.description {
 
 }
 #top, #bottom {
+	display: flex;
 	background: #00382B; color: #fff; 
+	flex-wrap: wrap;
+padding: 5px;
 }
 div.content {
 
@@ -426,6 +429,9 @@ h3 {font-size: 1.1rem}
 
 @media only screen and (min-width: 36rem) {
 
+div.main {
+flex-direction: row
+}
 	
 }
 

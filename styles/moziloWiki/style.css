@@ -171,6 +171,8 @@ div.description {}
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
+padding: 5px;
 }
 
 div.content {}
@@ -514,7 +516,13 @@ h3 {
 }
 
 
-@media only screen and (min-width: 36rem) {}
+@media only screen and (min-width: 36rem) {
+
+div.main {
+flex-direction: row
+}
+
+}
 
 @media only screen and (min-width: 48rem) {
 
