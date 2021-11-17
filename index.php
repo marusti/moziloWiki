@@ -1794,7 +1794,7 @@
 				// cut too long names
 				$shortfilename = $wikistringcleaner->shortenName($filename);
 				if ($ACTION == "edit")
-					$string .= "<div class=\"menuitem\"><em class=\"inactivemenupoint\">$shortfilename</em></div>";
+					$string .= "<div class=\"menuitem\"><em class=\"inactivemenupoint\">".str_replace('_', ' ', $shortfilename)."</em></div>";
 				else {
 					// pages
 					if ($type == "page"){
@@ -1806,7 +1806,7 @@
 					}
 					// files
 					elseif ($type == "file")
-						$string .= "<div class=\"menuitem\">".getLastChangeMarker($timestamp)."<a href=\"index.php?action=fileinfo&amp;file=$filename\" title=\"".strftime($mainsettings->getTimeFormat(), $timestamp)." - $filename\">$shortfilename</a></div>";
+						$string .= "<div class=\"menuitem\">".getLastChangeMarker($timestamp)."<a href=\"index.php?action=fileinfo&amp;file=$filename\" title=\"".strftime($mainsettings->getTimeFormat(), $timestamp)." - $filename\">".str_replace('_', ' ', $shortfilename)."</a></div>";
 				}
 			}
 		}
@@ -3102,9 +3102,9 @@
 				$timestamp = filemtime($DIR_PAGES.$backlink.$DEFAULT_PAGESEXT);
 				$editedfilename = $wikistringcleaner->shortenName($backlink);
 				if ($ACTION == "edit")
-					$backlinkstext .= "<div class=\"menuitem\"><em class=\"inactivemenupoint\">$editedfilename</em></div>";
+					$backlinkstext .= "<div class=\"menuitem\"><em class=\"inactivemenupoint\">".str_replace('_', ' ', $editedfilename)."</em></div>";
 				else
-					$backlinkstext .= "<div class=\"menuitem\">".getLastChangeMarker($timestamp)."<a href=\"$backlink\" title=\"".strftime($mainsettings->getTimeFormat(), $timestamp)." - $backlink\">$editedfilename</a></div>";
+					$backlinkstext .= "<div class=\"menuitem\">".getLastChangeMarker($timestamp)."<a href=\"$backlink\" title=\"".strftime($mainsettings->getTimeFormat(), $timestamp)." - ".str_replace('_', ' ', $backlink)."\">".str_replace('_', ' ', $editedfilename)."</a></div>";
 			}
 		}
 		$backlinkstext .= "</div></div>";

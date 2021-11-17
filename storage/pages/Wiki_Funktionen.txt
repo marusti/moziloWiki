@@ -1,1 +1,1 @@
-[ueber1|Wiki_Funktionen]Eine detaillierte Funktionsbeschreibung finden Sie auf [link|http://wiki.mozilo.de].
+[ueber1|Wiki Funktionen]Eine detaillierte Funktionsbeschreibung finden Sie auf [link|http://wiki.mozilo.de].

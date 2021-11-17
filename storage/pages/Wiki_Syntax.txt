@@ -1,4 +1,4 @@
-[ueber1|Wiki_Syntax][ueber2|Inhalt][absatz|Einführung]
+[ueber1|Wiki Syntax][ueber2|Inhalt][absatz|Einführung]
 [absatz|Übersicht aller Elemente - und was sie bewirken]
 [liste1|[absatz|Gestaltungselemente]]
 [liste1|[absatz|Textformatierung]]
@@ -104,8 +104,7 @@ ergibt: [html|<span style="color:#BB0000;">HTML</span>]
  
 [bild|pic/jsToolbar/linie.png] [kursiv|(Horizontale Trennlinie)] 
 [[fett|----]]
-ergibt: [----]
- 
+ergibt: [----] 
  
 [ueber3|Textformatierung] 
 [bild|pic/jsToolbar/links.png] [kursiv|(Linksbündiger Text)]
@@ -142,8 +141,7 @@ ergibt: [unter|Text]
  
 [bild|pic/jsToolbar/farbe.png] [kursiv|(Farbig dargestellter Text)]
 [[fett|farbe=DD0000]|Text]
-ergibt: [farbe=DD0000|Text]
- 
+ergibt: [farbe=DD0000|Text] 
  
 [----]
 [ueber2|Schachtelung von Elementen]Man kann die Inhalte also auf verschiedene Weise formatieren. Was aber, wenn z.B. ein Link kursiv dargestellt werden soll? Für solche Mehrfachformatierungen lassen sich die Syntax-Elemente ineinander schachteln:

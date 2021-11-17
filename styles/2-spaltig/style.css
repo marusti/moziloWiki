@@ -119,7 +119,8 @@ div.headline {
    background-color:#F4F3E8;
 }
 div.main {
-display: flex
+display: flex;
+flex-direction: column
 }
 div.menu {
 	float:left;

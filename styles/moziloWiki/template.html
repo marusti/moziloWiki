@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 
 <!--
-
 		moziloWiki - template.html
-
 		The HTML template file for moziloWiki. Feel free to change it to your personal purposes.
 		
 		moziloWiki 2021 <kontakt@mozilo.de>
-
 -->
 
 <html lang="de" id="a0">
@@ -28,29 +25,29 @@
 			<aside class="col-m-2">
 			{LOGIN_FORM}
 				<div class="submenu">
-				<div class="submenudescription">{USER_NAME} {USER_LOGOUT}</div>
+					<div class="submenudescription">{USER_NAME} {USER_LOGOUT}</div>
 					<div class="submenucontent">
-						<div class="menuitem">{HOME}</div>
+					<div class="menuitem">{HOME}</div>
 <!-- 
 	The following 2 menu items are especially important if the 
 	wiki users are not yet familiar with the wiki functions:
 -->
-						<div class="menuitem">{FUNCTIONS}</div>
-						<div class="menuitem">{TESTPAGE}</div>
-						<div class="menuitem">{USER_PAGE}</div>
-						<div class="menuitem">{USER_SETTINGS}</div>
-						<div class="menuitem">{WIKI_SETTINGS}</div>
-						<div class="menuitem">{WIKI_STATISTICS}</div>
-						<div class="menuitem">{ALL_USERS}</div>
-						<div class="menuitem">{SEARCH_USERS}</div>
+					<div class="menuitem">{FUNCTIONS}</div>
+					<div class="menuitem">{TESTPAGE}</div>
+					<div class="menuitem">{USER_PAGE}</div>
+					<div class="menuitem">{USER_SETTINGS}</div>
+					<div class="menuitem">{WIKI_SETTINGS}</div>
+					<div class="menuitem">{WIKI_STATISTICS}</div>
+					<div class="menuitem">{ALL_USERS}</div>
+					<div class="menuitem">{SEARCH_USERS}</div>
 					</div>
-					</div>
-					{USERSONLINE_LIST}
-					{USER_FAVOURITES}
-					{BACKLINKS_LIST}
-	</aside>
-	<div class="col-m-8">
-	<header class="text-center">{WIKI_TITLE} - {PAGE_TITLE}</header>
+				</div>
+				{USERSONLINE_LIST}
+				{USER_FAVOURITES}
+				{BACKLINKS_LIST}
+			</aside>
+			<div class="col-m-8">
+				<header class="text-center">{WIKI_TITLE} - {PAGE_TITLE}</header>
 					<div class="allcontent">
 						<div class="small" id="top">
 							{LAST_CHANGE} {BY} {LAST_CHANGER} {AT} {TIME} | {PRINT_LINK} | {FAVOURITE_LINK} | {EDIT}
@@ -60,36 +57,35 @@
 						</div>
 						<div class="small" id="bottom">
 							{LAST_CHANGE} {BY} {LAST_CHANGER} {AT} {TIME} | {PRINT_LINK} | {FAVOURITE_LINK} | {EDIT}
-						</div>
-						
+						</div>						
 					</div>
-	</div>
-	<aside class="col-m-2">
-		<div class="submenu">
-		<div class="submenudescription">{PAGES}</div>
-					<div class="submenucontent">
-						<div class="menuitem">{ALL_PAGES}</div>
-						<div class="menuitem">{RECENT_PAGES}</div>
-						<div class="menuitem">{TRASH_PAGES}</div>
-						<div class="menuitem">{ORPHANED_PAGES}</div>
-						<div class="menuitem">{NEW_PAGE}</div>
-						<div class="menuitem">{SEARCH_PAGES}</div>
-					</div>
-		</div>
-		<div class="submenu">
-					<div class="submenudescription">{FILES}</div>
-					<div class="submenucontent">
-						<div class="menuitem">{ALL_FILES}</div>
-						<div class="menuitem">{RECENT_FILES}</div>
-						<div class="menuitem">{TRASH_FILES}</div>
-						<div class="menuitem">{UPLOAD}</div>
-						<div class="menuitem">{SEARCH_FILES}</div>
-					</div>
-		</div>
-					{LATEST_PAGES_MENU}
-					{LATEST_FILES_MENU}
-			</aside>
 			</div>
+			<aside class="col-m-2">
+				<div class="submenu">
+				<div class="submenudescription">{PAGES}</div>
+				<div class="submenucontent">
+					<div class="menuitem">{ALL_PAGES}</div>
+					<div class="menuitem">{RECENT_PAGES}</div>
+					<div class="menuitem">{TRASH_PAGES}</div>
+					<div class="menuitem">{ORPHANED_PAGES}</div>
+					<div class="menuitem">{NEW_PAGE}</div>
+					<div class="menuitem">{SEARCH_PAGES}</div>
+				</div>
+				</div>
+				<div class="submenu">
+				<div class="submenudescription">{FILES}</div>
+				<div class="submenucontent">
+					<div class="menuitem">{ALL_FILES}</div>
+					<div class="menuitem">{RECENT_FILES}</div>
+					<div class="menuitem">{TRASH_FILES}</div>
+					<div class="menuitem">{UPLOAD}</div>
+					<div class="menuitem">{SEARCH_FILES}</div>
+				</div>
+				</div>
+				{LATEST_PAGES_MENU}
+				{LATEST_FILES_MENU}
+			</aside>
+		</div>
       <footer class="text-center small">
 			{WIKI_INFO}
 		</footer>

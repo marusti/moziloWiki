@@ -1,12 +1,10 @@
 /*
-
 		moziloWiki - style.css
 		
 		A CSS file for moziloWiki. Feel free to change it to your personal purposes.
 		
 		moziloWiki 2021 <kontakt@mozilo.de>
-		
-*/
+		*/
 
 * {
   box-sizing: border-box;
@@ -73,14 +71,12 @@ header {
   font-weight: 700
 }
 
-.myWiki .even,
-.myWiki .uneven {
+.myWiki .even,.myWiki .uneven {
   display: flex;
   align-items: center
 }
 
-.even>div,
-.uneven>div {
+.even>div,.uneven>div {
   width: 50%;
   padding: 10px
 }
@@ -97,6 +93,24 @@ select {
   border-radius: 5px;
   margin: 5px 0;
   cursor: pointer;
+}
+
+/*Liste*/
+
+ul {
+list-style-position: inside;
+}
+
+ul li {
+margin-left: 10px
+}
+
+ul ul li {
+margin-left: 20px
+}
+
+ul ul ul li {
+margin-left: 30px
 }
 
 /*wikiTable*/
@@ -124,8 +138,6 @@ select {
   cursor: pointer;
 }
 
-
-
 div.headline {
   margin-bottom: 10px;
   padding: 5px;
@@ -137,7 +149,8 @@ div.headline {
 }
 
 div.main {
-  display: flex
+  display: flex;
+  flex-direction: column
 }
 
 div.menu {
@@ -146,16 +159,13 @@ div.menu {
   padding: 0px;
 }
 
-div.menuitem {
-  /*	margin:2px 10px;*/
-}
+div.menuitem {}
 
 div.allcontent {}
 
 div.description {}
 
-#top,
-#bottom {
+#top,#bottom {
   background: #306897;
   color: #fff;
   display: flex;
@@ -166,15 +176,11 @@ div.description {}
 div.content {}
 
 .submenu {
-
   margin-bottom: 10px;
   border: 1px solid #eee;
   border-radius: 5px;
-
   box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
   background: #fff;
-
-
 }
 
 .submenu:last-of-type {
@@ -186,11 +192,9 @@ div.submenudescription {
   color: #fff;
   padding: 10px;
   border-radius: 5px 5px 0 0;
-
 }
 
-div.submenucontent,
-div.submenucontentscroll {
+div.submenucontent,div.submenucontentscroll {
   padding: 10px;
 }
 
@@ -210,6 +214,15 @@ a:link {
 
 a:hover {
   text-decoration: underline;
+}
+
+a.backtotop {
+color: #306897; 
+margin-right: 10px
+}
+
+a.backtotop:hover {
+text-decoration: none;
 }
 
 a.pending {
@@ -264,11 +277,7 @@ a.activemenupoint {
   font-weight: 700
 }
 
-
-input.menutext,
-input.menubutton,
-select.menu,
-select.content {}
+input.menutext,input.menubutton,select.menu,select.content {}
 
 input {
   width: 100%;
@@ -307,21 +316,17 @@ td.even {}
 td.summary {}
 
 p.reportok {
-  /*	margin-bottom:15px;*/
   padding: 5px;
-  background-color: darkgreen;
+  background-color: 228B22;
   color: #fff;
   text-align: center;
-  /*	border:1px solid #339933;*/
 }
 
 p.reportwarning {
-  /*	margin-bottom:15px;*/
   padding: 5px;
   background-color: #CC0033;
   color: #fff;
   text-align: center;
-  /*	border:1px solid #CC3333;*/
 }
 
 div.code {
@@ -397,7 +402,6 @@ em.underlined {
   text-decoration: underline;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -418,9 +422,8 @@ img.rightcontentimage {
 
 img.js {
   border: 1px solid #c0c0c0;
-  /*	height: 24px;*/
   padding: 5px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   margin: 2px;
 }
 
@@ -431,7 +434,7 @@ img.js:hover {
 img.jss {
   border: 1px solid #c0c0c0;
   padding: 1px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   margin: 2px;
 }
 
@@ -445,9 +448,7 @@ a.login_wikilink {}
 
 a.login_wikilink:hover {}
 
-h1,
-h2,
-h3 {
+h1,h2,h3 {
   color: #306897;
   margin: 10px 0
 }
@@ -485,16 +486,16 @@ h3 {
   align-self: center;
   justify-self: center;
   text-align: center;
-  padding: 40px var(--main-padding) var(--main-padding);
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  background: var(--main-bg-color);
+  padding: 40px 10px 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
+  background: #fff;
   min-width: 300px
 }
 
 .login h3 {
-  margin: var(--main-margin) 0;
+  margin: 10px 0;
 }
 
 .avatar {
@@ -516,7 +517,6 @@ h3 {
 @media only screen and (min-width: 36rem) {}
 
 @media only screen and (min-width: 48rem) {
-
 
   /*Grid*/
 

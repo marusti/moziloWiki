@@ -49,7 +49,7 @@
 		else
 
 if (isset($_GET['page'])) {
-    $this->backtotoplink		= "<a href=\"#\" title=\"".$wikilanguage->get("LANG_BACKTOTOP")."\"><img src=\"pic/backtotopicon.gif\" alt=\"&uArr;\" /></a>";
+    $this->backtotoplink		= "<a href=\"#\" class=\"backtotop\" title=\"".$wikilanguage->get("LANG_BACKTOTOP")."\">&#8679;</a>";
 
 }		
 		
