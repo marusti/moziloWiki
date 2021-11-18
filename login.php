@@ -35,8 +35,7 @@
 	. "<head>" ."\n"
 	. "<meta charset=\"utf-8\">" ."\n"
    . "<meta name=\"viewport\" content=\"width = device-width, initial-scale = 1.0\" />" ."\n" 
-	. "<link rel=\"stylesheet\" href=\"$MAINDIR_STYLES$wikistyle/$CSS_FILE\">" ."\n"
-	. "<link rel=\"stylesheet\" href=\"$MAINDIR_STYLES$wikistyle/cssonly.css\">" ."\n";
+	. "<link rel=\"stylesheet\" href=\"$MAINDIR_STYLES$wikistyle/$CSS_FILE\">" ."\n";
 	// Logout?
 	if (isset($_GET['logout'])) {
     // Session beenden und die Sessiondaten löschen

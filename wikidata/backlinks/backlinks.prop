@@ -2,5 +2,5 @@ Administrator = das_ist_ein_sehr_langer_name_fuer_einen_artikel,test-1,Tester,Wi
 Lizenz = Wiki_Startseite
 Wiki_Funktionen = 
 Wiki_Startseite = 
-Wiki_Syntax = Wiki_Startseite,Wiki_Testseite
+Wiki_Syntax = Wiki_Testseite,Wiki_Startseite
 Wiki_Testseite = Wiki_Startseite

@@ -1842,7 +1842,7 @@
 					$trash = "";
 				// show file info button? in trash only for admins!
 				if ($linktofileinfo && (($dir != $DIR_TRASHFILES) || $GRP_EDITUSERS))
-					return "<a href=\"download.php?file=$file$trash\" title=\"".$wikilanguage->get("LANG_SHOWFILE")." &quot;$file&quot;\" class=\"file\">$editedfilename</a>&nbsp;<a href=\"index.php?action=fileinfo&amp;file=$file$trash\" title=\"".$wikilanguage->get("LANG_FILEINFO").": &quot;$file&quot;\"><img src=\"pic/fileinfoicon.gif\" alt=\"(i)\" /></a>";
+					return "<a href=\"download.php?file=$file$trash\" title=\"".$wikilanguage->get("LANG_SHOWFILE")." &quot;$file&quot;\" class=\"file\">$editedfilename</a>&nbsp;<a href=\"index.php?action=fileinfo&amp;file=$file$trash\" title=\"".$wikilanguage->get("LANG_FILEINFO").": &quot;$file&quot;\">&#9432;</a>";
 				else
 					return "<a href=\"download.php?file=$file$trash\" title=\"".$wikilanguage->get("LANG_SHOWFILE")." &quot;$file&quot;\" class=\"file\">$editedfilename</a>";
 			}
@@ -3327,6 +3327,6 @@
 	function wikiInfo() {
 		global $mainsettings;
 		global $wikilanguage;
-		return "| <a href=\"https://wiki.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"wiki.mozilo.de\">moziloWiki 1.1 alpha3</a> | &copy; 2009 - <script> document.write(new Date().getFullYear()); </script> by <a href=\"https://www.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"mozilo.de\">mozilo</a> | ".$wikilanguage->get("LANG_SERVERTIME")." ".strftime($mainsettings->getTimeFormat(), time())." |";
+		return "| <a href=\"https://wiki.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"wiki.mozilo.de\">moziloWiki 1.1 RC-1</a> | &copy; 2009 - <script> document.write(new Date().getFullYear()); </script> by <a href=\"https://www.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"mozilo.de\">mozilo</a> | ".$wikilanguage->get("LANG_SERVERTIME")." ".strftime($mainsettings->getTimeFormat(), time())." |";
 	}
 ?>
