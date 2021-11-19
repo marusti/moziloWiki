@@ -3327,6 +3327,6 @@
 	function wikiInfo() {
 		global $mainsettings;
 		global $wikilanguage;
-		return "| <a href=\"https://wiki.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"wiki.mozilo.de\">moziloWiki 1.1 RC-1</a> | &copy; 2009 - <script> document.write(new Date().getFullYear()); </script> by <a href=\"https://www.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"mozilo.de\">mozilo</a> | ".$wikilanguage->get("LANG_SERVERTIME")." ".strftime($mainsettings->getTimeFormat(), time())." |";
+		return "| <a href=\"http://wiki.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"wiki.mozilo.de\">moziloWiki 1.1 RC-1</a> | &copy; 2009 - <script> document.write(new Date().getFullYear()); </script> by <a href=\"https://www.mozilo.de/\" target=\"_blank\" class=\"wikiinfolink\" title=\"mozilo.de\">mozilo</a> | ".$wikilanguage->get("LANG_SERVERTIME")." ".strftime($mainsettings->getTimeFormat(), time())." |";
 	}
 ?>
