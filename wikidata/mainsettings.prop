@@ -7,7 +7,6 @@ failedloginbantime = 15
 failedloginsallowed = 3
 fileslifetime = 0
 maxuploadsize = 0
-metades = moziloWiki ist das Wiki für Einsteiger - problemlos einzurichten, leicht zu administrieren und komfortabel zu benutzen und kommt ohne eine Datenbank aus.
 metadesc = moziloWiki ist das Wiki für Einsteiger - problemlos einzurichten, leicht zu administrieren und komfortabel zu benutzen und kommt ohne eine Datenbank aus.
 metakey = moziloWiki, Wiki
 pageslifetime = 0
